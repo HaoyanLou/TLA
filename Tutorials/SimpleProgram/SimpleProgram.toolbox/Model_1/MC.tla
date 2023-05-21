@@ -1,6 +1,6 @@
 ---- MODULE MC ----
-EXTENDS SimpleProgram, TLC
+EXTENDS Untitled, TLC
 
 =============================================================================
 \* Modification History
-\* Created Sun May 21 16:44:00 EDT 2023 by alkaidelectra
+\* Created Sun May 21 19:02:45 EDT 2023 by alkaidelectra

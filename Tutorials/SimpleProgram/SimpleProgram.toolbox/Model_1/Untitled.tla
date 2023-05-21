@@ -1,4 +1,4 @@
---------------------------- MODULE SimpleProgram ---------------------------
+------------------------------ MODULE Untitled ------------------------------
 EXTENDS Integers
 VARIABLES i, pc   
 
@@ -16,5 +16,5 @@ Next == Pick \/ Add1
 
 =============================================================================
 \* Modification History
-\* Last modified Sun May 21 16:30:56 EDT 2023 by alkaidelectra
-\* Created Sun May 21 16:30:00 EDT 2023 by alkaidelectra
+\* Last modified Sun May 21 19:02:26 EDT 2023 by alkaidelectra
+\* Created Sun May 21 19:01:36 EDT 2023 by alkaidelectra

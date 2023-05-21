@@ -2,13 +2,13 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 111 and seed 3392150406146294495 with 4 workers on 8 cores with 1214MB heap and 2730MB offheap memory [pid: 68859] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 37 and seed 3897927459617009496 with 4 workers on 8 cores with 1214MB heap and 2730MB offheap memory [pid: 70243] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
-Parsing file /Users/alkaidelectra/Documents/TLA+/Tutorials/SimpleProgramInLec02/SimpleProgram.toolbox/Model_1/MC.tla
-Parsing file /Users/alkaidelectra/Documents/TLA+/Tutorials/SimpleProgramInLec02/SimpleProgram.toolbox/Model_1/SimpleProgram.tla
+Parsing file /Users/alkaidelectra/Documents/TLA+/TLA/Tutorials/SimpleProgram/SimpleProgram.toolbox/Model_1/MC.tla
+Parsing file /Users/alkaidelectra/Documents/TLA+/TLA/Tutorials/SimpleProgram/SimpleProgram.toolbox/Model_1/Untitled.tla
 Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
 Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
 Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
@@ -16,7 +16,7 @@ Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport
 Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
-Semantic processing of module SimpleProgram
+Semantic processing of module Untitled
 Semantic processing of module Sequences
 Semantic processing of module FiniteSets
 Semantic processing of module TLC
@@ -25,95 +25,77 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-05-21 16:46:28)
+Starting... (2023-05-21 19:02:47)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-05-21 16:46:29.
+Finished computing initial states: 1 distinct state generated at 2023-05-21 19:02:48.
 @!@!@ENDMSG 2190 @!@!@
-@!@!@STARTMSG 2114:1 @!@!@
-Deadlock reached.
-@!@!@ENDMSG 2114 @!@!@
-@!@!@STARTMSG 2121:1 @!@!@
-The behavior up to this point is:
-@!@!@ENDMSG 2121 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-1: <Initial predicate>
-/\ i = 0
-/\ pc = "start"
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-2: <Pick line 7, col 9 to line 9, col 25 of module SimpleProgram>
-/\ i = 0
-/\ pc = "middle"
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-3: <Add1 line 11, col 9 to line 13, col 23 of module SimpleProgram>
-/\ i = 1
-/\ pc = "done"
-
-@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 0.0
+@!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-05-21 16:46:29
+The coverage statistics at 2023-05-21 19:02:48
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 5, col 1 to line 5, col 4 of module SimpleProgram>: 2:2
+<Init line 5, col 1 to line 5, col 4 of module Untitled>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 5, col 9 to line 5, col 33 of module SimpleProgram: 2
+  line 5, col 9 to line 5, col 33 of module Untitled: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Pick line 7, col 1 to line 7, col 4 of module SimpleProgram>: 1001:2002
+<Pick line 7, col 1 to line 7, col 4 of module Untitled>: 1001:1001
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 7, col 12 to line 7, col 23 of module SimpleProgram: 21
+  line 7, col 12 to line 7, col 23 of module Untitled: 2004
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 7, col 12 to line 7, col 13 of module SimpleProgram: 19
+  |line 7, col 12 to line 7, col 13 of module Untitled: 2003
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 8, col 12 to line 8, col 25 of module SimpleProgram: 2002
+  line 8, col 12 to line 8, col 25 of module Untitled: 1001
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 8, col 19 to line 8, col 25 of module SimpleProgram: 2
+  |line 8, col 19 to line 8, col 25 of module Untitled: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 9, col 12 to line 9, col 25 of module SimpleProgram: 2002
+  line 9, col 12 to line 9, col 25 of module Untitled: 1001
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Add1 line 11, col 1 to line 11, col 4 of module SimpleProgram>: 13:14
+<Add1 line 11, col 1 to line 11, col 4 of module Untitled>: 1001:1001
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 11, col 12 to line 11, col 24 of module SimpleProgram: 32
+  line 11, col 12 to line 11, col 24 of module Untitled: 3004
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 11, col 12 to line 11, col 13 of module SimpleProgram: 18
+  |line 11, col 12 to line 11, col 13 of module Untitled: 2003
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 12, col 12 to line 12, col 21 of module SimpleProgram: 14
+  line 12, col 12 to line 12, col 21 of module Untitled: 1001
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 13, col 12 to line 13, col 23 of module SimpleProgram: 14
+  line 13, col 12 to line 13, col 23 of module Untitled: 1001
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(3) at 2023-05-21 16:46:29: 1,015 states generated (30,118 s/min), 1,015 distinct states found (30,118 ds/min), 998 states left on queue.
+Progress(3) at 2023-05-21 19:02:48: 2,003 states generated (60,974 s/min), 2,003 distinct states found (60,974 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-1015 states generated, 1015 distinct states found, 998 states left on queue.
+2003 states generated, 2003 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
 The depth of the complete state graph search is 3.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 3 (minimum is 0, the maximum 31 and the 95th percentile is 31).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 31 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 2042ms at (2023-05-21 16:46:29)
+Finished in 1992ms at (2023-05-21 19:02:48)
 @!@!@ENDMSG 2186 @!@!@
