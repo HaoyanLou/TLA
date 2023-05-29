@@ -2,13 +2,13 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 12 and seed 8728022793922184266 with 12 workers on 24 cores with 2412MB heap and 5422MB offheap memory [pid: 1276] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 56 and seed 5223682300610363239 with 12 workers on 24 cores with 2412MB heap and 5422MB offheap memory [pid: 13660] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
-Parsing file C:\Users\Administrator\Desktop\新建文件夹\WaterGallon\WaterGallon.toolbox\Model_1\MC.tla
-Parsing file C:\Users\Administrator\Desktop\新建文件夹\WaterGallon\WaterGallon.toolbox\Model_1\WaterGallon.tla
+Parsing file D:\Documents\GitHub\TLA\Tutorials\WaterGallon\WaterGallon.toolbox\Model_1\MC.tla
+Parsing file D:\Documents\GitHub\TLA\Tutorials\WaterGallon\WaterGallon.toolbox\Model_1\WaterGallon.tla
 Parsing file C:\Users\Administrator\Desktop\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\TLC.tla
 Parsing file C:\Users\Administrator\Desktop\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\Integers.tla
 Parsing file C:\Users\Administrator\Desktop\toolbox\plugins\org.lamport.tlatools_1.0.0.202012311918\tla2sany\StandardModules\Naturals.tla
@@ -25,16 +25,16 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-05-29 13:51:49)
+Starting... (2023-05-29 15:38:25)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-05-29 13:51:50.
+Finished computing initial states: 1 distinct state generated at 2023-05-29 15:38:26.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
-Invariant inv_16853827096725000 is violated.
+Invariant inv_168538910560825000 is violated.
 @!@!@ENDMSG 2110 @!@!@
 @!@!@STARTMSG 2121:1 @!@!@
 The behavior up to this point is:
@@ -46,55 +46,43 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-2: <FillSmall line 12, col 14 to line 13, col 28 of module WaterGallon>
-/\ big = 0
-/\ small = 3
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-3: <SmallToBig line 24, col 15 to line 28, col 49 of module WaterGallon>
-/\ big = 3
-/\ small = 0
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-4: <FillSmall line 12, col 14 to line 13, col 28 of module WaterGallon>
-/\ big = 3
-/\ small = 3
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-5: <SmallToBig line 24, col 15 to line 28, col 49 of module WaterGallon>
+2: <FillBig line 15, col 12 to line 16, col 28 of module WaterGallon>
 /\ big = 5
-/\ small = 1
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-6: <EmptyBig line 21, col 13 to line 22, col 29 of module WaterGallon>
-/\ big = 0
-/\ small = 1
-
-@!@!@ENDMSG 2217 @!@!@
-@!@!@STARTMSG 2217:4 @!@!@
-7: <SmallToBig line 24, col 15 to line 28, col 49 of module WaterGallon>
-/\ big = 1
 /\ small = 0
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-8: <FillSmall line 12, col 14 to line 13, col 28 of module WaterGallon>
-/\ big = 1
+3: <BigToSmall line 30, col 15 to line 34, col 33 of module WaterGallon>
+/\ big = 2
 /\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2217:4 @!@!@
-9: <SmallToBig line 24, col 15 to line 28, col 49 of module WaterGallon>
-/\ big = 4
+4: <EmptySmall line 18, col 15 to line 19, col 29 of module WaterGallon>
+/\ big = 2
 /\ small = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <BigToSmall line 30, col 15 to line 34, col 33 of module WaterGallon>
+/\ big = 0
+/\ small = 2
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <FillBig line 15, col 12 to line 16, col 28 of module WaterGallon>
+/\ big = 5
+/\ small = 2
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <BigToSmall line 30, col 15 to line 34, col 33 of module WaterGallon>
+/\ big = 4
+/\ small = 3
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-05-29 13:51:50
+The coverage statistics at 2023-05-29 15:38:26
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
 <Init line 9, col 1 to line 9, col 4 of module WaterGallon>: 2:2
@@ -103,64 +91,64 @@ The coverage statistics at 2023-05-29 13:51:50
   line 9, col 9 to line 10, col 20 of module WaterGallon: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<FillSmall line 12, col 1 to line 12, col 9 of module WaterGallon>: 3:22
+<FillSmall line 12, col 1 to line 12, col 9 of module WaterGallon>: 3:20
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 12, col 14 to line 13, col 28 of module WaterGallon: 22
+  line 12, col 14 to line 13, col 28 of module WaterGallon: 20
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<FillBig line 15, col 1 to line 15, col 7 of module WaterGallon>: 3:19
+<FillBig line 15, col 1 to line 15, col 7 of module WaterGallon>: 3:20
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 15, col 12 to line 16, col 28 of module WaterGallon: 19
+  line 15, col 12 to line 16, col 28 of module WaterGallon: 20
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<EmptySmall line 18, col 1 to line 18, col 10 of module WaterGallon>: 1:19
+<EmptySmall line 18, col 1 to line 18, col 10 of module WaterGallon>: 1:18
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 18, col 15 to line 19, col 29 of module WaterGallon: 19
+  line 18, col 15 to line 19, col 29 of module WaterGallon: 18
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<EmptyBig line 21, col 1 to line 21, col 8 of module WaterGallon>: 1:19
+<EmptyBig line 21, col 1 to line 21, col 8 of module WaterGallon>: 1:17
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 21, col 13 to line 22, col 29 of module WaterGallon: 19
+  line 21, col 13 to line 22, col 29 of module WaterGallon: 17
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<SmallToBig line 24, col 1 to line 24, col 10 of module WaterGallon>: 4:18
+<SmallToBig line 24, col 1 to line 24, col 10 of module WaterGallon>: 4:17
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 24, col 18 to line 24, col 33 of module WaterGallon: 18
+  line 24, col 18 to line 24, col 33 of module WaterGallon: 17
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 25, col 24 to line 25, col 43 of module WaterGallon: 12
+  line 25, col 24 to line 25, col 43 of module WaterGallon: 11
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 25, col 33 to line 25, col 43 of module WaterGallon: 13
+  |line 25, col 33 to line 25, col 43 of module WaterGallon: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 26, col 24 to line 26, col 33 of module WaterGallon: 12
+  line 26, col 24 to line 26, col 33 of module WaterGallon: 11
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 27, col 21 to line 28, col 49 of module WaterGallon: 5
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<BigToSmall line 30, col 1 to line 30, col 10 of module WaterGallon>: 3:13
+<BigToSmall line 30, col 1 to line 30, col 10 of module WaterGallon>: 3:16
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 30, col 18 to line 30, col 33 of module WaterGallon: 13
+  line 30, col 18 to line 30, col 33 of module WaterGallon: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 31, col 21 to line 32, col 43 of module WaterGallon: 7
+  line 31, col 21 to line 32, col 43 of module WaterGallon: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 33, col 24 to line 33, col 49 of module WaterGallon: 5
+  line 33, col 24 to line 33, col 49 of module WaterGallon: 7
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 33, col 33 to line 33, col 49 of module WaterGallon: 6
+  |line 33, col 33 to line 33, col 49 of module WaterGallon: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 34, col 24 to line 34, col 33 of module WaterGallon: 5
+  line 34, col 24 to line 34, col 33 of module WaterGallon: 7
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
 <TypeOK line 6, col 1 to line 6, col 6 of module WaterGallon>
@@ -169,7 +157,7 @@ The coverage statistics at 2023-05-29 13:51:50
   line 6, col 11 to line 7, col 27 of module WaterGallon: 16
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<inv_16853827096725000 line 5, col 1 to line 5, col 21 of module MC>
+<inv_168538910560825000 line 5, col 1 to line 5, col 22 of module MC>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 6, col 1 to line 6, col 8 of module MC: 16
@@ -178,7 +166,7 @@ The coverage statistics at 2023-05-29 13:51:50
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2023-05-29 13:51:50: 84 states generated (8,129 s/min), 16 distinct states found (1,548 ds/min), 0 states left on queue.
+Progress(9) at 2023-05-29 15:38:26: 84 states generated (8,012 s/min), 16 distinct states found (1,526 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 84 states generated, 16 distinct states found, 0 states left on queue.
@@ -190,5 +178,5 @@ The depth of the complete state graph search is 9.
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 623ms at (2023-05-29 13:51:50)
+Finished in 633ms at (2023-05-29 15:38:26)
 @!@!@ENDMSG 2186 @!@!@
